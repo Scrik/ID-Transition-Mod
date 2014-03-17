@@ -1,0 +1,17 @@
+[
+{
+  "modid" : "IdTransitionMod",
+  "name" : "ID Transtion",
+  "version" : "@version@",
+  "url" : "",
+  "credits" : "Created by joserobjr",
+  "authors" : [
+    "joserobjr"
+  ],
+  "description" : "",
+  "logoFile" : "",
+  "updateUrl" : "",
+  "parent" : "",
+  "screenshots": [
+  ]
+}
