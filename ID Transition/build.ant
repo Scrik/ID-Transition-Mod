@@ -9,6 +9,7 @@
     <property name="dist" location="./dist" />
     <property name="version" value="1.0-dev" />
     <property name="zip-name" value="id-transition" />
+    <property name="reob-cmd" value="reobfuscate_srg" />
     
     <target name="copy-src">
         <copy todir="${minecraft-src}" verbose="true">
@@ -24,9 +25,9 @@
     </target>
 
     <target name="reobfuscate" depends="recompile">
-        <echo message="Executing ${script-executor} ${script-executor-args} ${mcp}/reobfuscate.${script-extension}" />
+        <echo message="Executing ${script-executor} ${script-executor-args} ${mcp}/${reob-cmd}.${script-extension}" />
         <exec executable="${script-executor}" dir="${mcp}">
-            <arg line="${script-executor-args} ${mcp}/reobfuscate_srg.${script-extension}" />
+            <arg line="${script-executor-args} ${mcp}/${reob-cmd}.${script-extension}" />
         </exec>
     </target>
     
