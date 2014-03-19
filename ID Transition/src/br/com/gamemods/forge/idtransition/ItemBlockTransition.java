@@ -18,7 +18,6 @@ public class ItemBlockTransition extends ItemBlock {
 	@Override
 	public void onUpdate(ItemStack stack, World world, Entity entity, int index, boolean currentItem) {
 		if(!(entity instanceof EntityPlayer)) return;
-		if(1==1) return;
 		EntityPlayer player = (EntityPlayer) entity;
 		
 		Block b = Block.blocksList[getBlockID()];
