@@ -1,5 +1,5 @@
 <project name="IDTransitionMod" default="dist">
-    <property name="mcp" location="../../.." />
+    <property name="mcp" location="${mcp-1.6.4}" />
     <property name="minecraft-src" location="${mcp}/src/minecraft/" />
     <property name="src" location="./src" />
     <property name="resources" location="./resources" />
